@@ -1,6 +1,3 @@
-import { Template } from 'meteor/templating';
+import { Mongo } from 'meteor/mongo';
  
-import { Tasks } from '../api/tasks.js';
- 
-import './task.html';
- 
+export const Tasks = new Mongo.Collection('tasks');
